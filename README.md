@@ -165,12 +165,6 @@ If you want to push yourself and learn something new, optionally consider doing 
 * Sherwin
 * Ken
 
-#### Group 5 - TBD (INSTRUCTOR)
-
-* TBD
-* TBD
-* TBD
-* TBD
 
 ---
 
