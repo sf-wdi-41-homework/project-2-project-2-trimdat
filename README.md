@@ -119,9 +119,9 @@ If you want to push yourself and learn something new, optionally consider doing 
 
 ###### When is it due?
 
-* **{{ENTER PROJECT PLANNING DELIVERABLES DATE HERE & TIME}}** - [Project planning deliverables](#project-planning-deliverables) due! Before beginning work on your project, your idea, project scope, and other planning deliverables must be approved by an instructor.
+* **11-28-2017 @ 12:30pm** - [Project planning deliverables](#project-planning-deliverables) due! Before beginning work on your project, your idea, project scope, and other planning deliverables must be approved by an instructor.
 
-* **{{ENTER PROJECT PRESENTATION AN DUE DATE HERE}}** - [Completed project deliverables](#completed-project-deliverables) due and presentations!
+* **12-04-2017 @ 10:00am** - [Completed project deliverables](#completed-project-deliverables) due and presentations!
 
 ---
 
@@ -138,33 +138,32 @@ If you want to push yourself and learn something new, optionally consider doing 
 
 ###### Who are my group members and assigned instructor?
 
-#### Group 1 - TBD (INSTRUCTOR)
+#### Group 1
 
-* TBD
-* TBD
-* TBD
-* TBD
+* Kenneth
+* Peng
+* Tahl
 
 #### Group 2 - TBD (INSTRUCTOR)
 
-* TBD
-* TBD
-* TBD
-* TBD
+* Stephanie
+* Ray
+* Nick
+
 
 #### Group 3 - TBD (INSTRUCTOR)
 
-* TBD
-* TBD
-* TBD
-* TBD
+* Beth
+* Levi
+* Austin
+* Sherry
+
 
 #### Group 4 - TBD (INSTRUCTOR)
 
-* TBD
-* TBD
-* TBD
-* TBD
+* Masha
+* Sherwin
+* Ken
 
 #### Group 5 - TBD (INSTRUCTOR)
 
@@ -179,7 +178,7 @@ If you want to push yourself and learn something new, optionally consider doing 
 
 ###### What should we cover during our presentation?
 
-Each group will present their project on **{{ENTER PRESENTATION DATE HERE}}** starting at ** {{PRESENTATION TIME}}**. Please follow these guidelines:
+Each group will present their project on **12-04-2017** starting at ** 10:00AM**. Please follow these guidelines:
 
 * Your presentation should include the **motivation** for building this project and a **demo** of the core functionality.
 * **Maximum 20 minutes.**
