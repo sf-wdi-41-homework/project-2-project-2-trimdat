@@ -33,9 +33,9 @@ Users will be able to:
 # Trimdat on Heroku
 (https://fathomless-refuge-13424.herokuapp.com/)
 
-# Technologies User
-Ruby, Rails, Bootstrap
-Gems: Tzinfo-data, sass-rails, turbolinks, jbuilder
+# Technologies Used
+Ruby, Rails, Bootstrap, Javascript
+Gems: Tzinfo-data, sass-rails, turbolinks, jbuilder, bcrypt
 
 # Wish List for Future Development
 With more time, we would have added more options for formatting. We would have also created teams and team profiles for easier sharing of documents.
