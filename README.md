@@ -1,7 +1,7 @@
-* README
+# README
 Trimdat allows users to upload .csv or .txt files and use our web app to auto-magically clean the data. Users can create new profiles/login to see old files or upload new ones, choose from an array of options on what they would like done to their file (i.e. remove duplicate data, view word count, sort A<->Z), and email themselves a copy of the trimmed data.  
 
-* MVP Goals
+# MVP Goals
 Users will be able to:
 - create a new account
 - sign in/out of existing account
@@ -13,13 +13,13 @@ Users will be able to:
 - delete previously saved files
 - view/edit/email files on their account
 
-* Reach Goals
+# Reach Goals
 - return/email files in different formats
 - public vs private files
 - creating teams of users
 - e-commerce (providing more services for a small fee)
 
-* Topics of Research
+# Topics of Research
 - uploading csv files
 - parsing data within csv and txt files
 - transforming files into other types of files (formatting)
@@ -27,31 +27,22 @@ Users will be able to:
 - login using Google and auto-save to their google sheets
 - format data into html tables or convert to pdf 
 
-
-* Who is in charge of what
-
-Masha:
-Creating databases, updating front end styles, creation of trello board/read me/ wire frames, creation of components
-
-Ken:
-Creation of components, styling front end
-
-Sherwin:
-BACKEND
-
-* Ruby version
+# Ruby version
   ruby 2.3.3p222
 
-* System dependencies
+# Trimdat on Heroku
+(https://fathomless-refuge-13424.herokuapp.com/)
 
-* Configuration
+# Technologies User
+Ruby, Rails, Bootstrap
+Gems: Tzinfo-data, sass-rails, turbolinks, jbuilder
 
-* Database creation
+# Wish List for Future Development
+With more time, we would have added more options for formatting. We would have also created teams and team profiles for easier sharing of documents.
 
-* Database initialization
+# Contributors
+Sherwin - (https://github.com/Sherwin32)
 
-* How to run the test suite
+Ken - (https://github.com/xdong002)
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+Masha - (https://github.com/marbisman)
