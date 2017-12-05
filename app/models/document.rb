@@ -2,7 +2,8 @@ class Document < ApplicationRecord
   has_many :document_librarys, dependent: :destroy
   has_many :users, through: :document_librarys
 	validate :file_size_under_one_mb, :on => :create
-	# attr_accessor :word_occurrence
+
+	validates_associated :users, uniqueness: true
 
 	def initialize(params = {})
 	  # File is now an instance variable so it can be
@@ -43,7 +44,18 @@ class Document < ApplicationRecord
 	  end
 	end
 
+	def share(usr)
+		# Share this document with another usr
+		users << usr
+	end
+
+	def unshare(usr)
+		# Make sure this doesn't delete the user through cascading!
+		users.delete(usr)
+	end
+
 	private
+
 	def sanitize_filename(filename)
 	# Get only the filename, not the whole path (for IE)
 	# Thanks to this article I just found for the tip: http://mattberther.com/2007/10/19/uploading-files-to-a-database-using-rails
