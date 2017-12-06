@@ -14,48 +14,24 @@ class DocumentsController < ApplicationController
   #Delete user from sharing list if current user is the file owner
   #Remove current user from the sharing list if current user isn't file owner
   def unshare
-    puts params
     @document = Document.find(params[:document_id])
-    @user_to_unshare = User.find(params[:unshare_id])
-    puts @document.users
-    unshare_relation = @document.users.find(@user_to_unshare.id)
-    @document.users.delete(unshare_relation)
-    if params[:redirect_target] == "user_show"
-      flash[:notice] = "You stopped unfollowed file #{@document.name}"
-      redirect_to user_path(current_user.id)
-    else
-      flash[:notice] = "Deleted #{@user_to_unshare.user_name} from sharing list"
-      redirect_to document_show_path(@document.id)
-    end
+    # FIXME: Use the Rails logger
+    logger.info("Document users: #{@document.users}")
+
+    @document.unshare(params[:unshare_id])
+    flash[:notice] = "You stopped sharing #{@document.name}"
+    logger.info("Document unshared: #{@document.users}")
+
+    redirect_to user_path(current_user.id)
   end
 
   #Give other users access to this file by user_name
   def share_doc
-    if @user_to_share = User.find_by(share_doc_params)
-      if @document.users.where(user_name: @user_to_share[:user_name]).exists?
-        flash[:notice] = "#{@user_to_share[:user_name]} is already on the list"
-        if params[:redirect_target] == "user_show"
-          redirect_to user_path(current_user.id)
-        else
-          redirect_to document_show_path(@document.id)
-        end
-      else
-        @document.users << @user_to_share
-        flash[:notice] = "#{@user_to_share[:user_name]} is now on the list"
-        if params[:redirect_target] == "user_show"
-          redirect_to user_path(current_user.id)
-        else
-          redirect_to document_show_path(@document.id)
-        end
-      end
-    else
-      flash[:notice] = "Can not find user name: #{share_doc_params[:user_name]}"
-      if params[:redirect_target] == "user_show"
-        redirect_to user_path(current_user.id)
-      else
-        redirect_to document_show_path(@document.id)
-      end
-    end
+    # FIXME: A good place to use model scope filtering
+    @document = Document.find(params[:document_id])
+    @document.share(share_doc_params)
+    flash[:notice] = "You shared #{@document.name}"
+    redirect_to document_show_path(@document.id)
   end
 
   #return fixed file content in json format
